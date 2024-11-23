@@ -1,2 +1,2 @@
 # Hoang's personal portfolio
-Welcom to my web ^_^  ^_^
+Welcom to my web ^_^ 
