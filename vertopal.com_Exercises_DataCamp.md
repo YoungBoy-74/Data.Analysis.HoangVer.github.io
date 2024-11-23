@@ -10,7 +10,6 @@ jupyter:
   nbformat_minor: 0
 ---
 
-::: {.cell .markdown id="ryn_hNJ7ERnx"}
 **Exploratory Data Analysis (EDA)**
 
 1.  Understanding Data Context According to the World Health
@@ -31,13 +30,9 @@ your trainer). You can use the results of these sections for your
 report. Similarly, there are suggestive questions throughout the report
 that might take deeper investigation and thought. Your answers would be
 useful for both your reports and future job interviews
-:::
 
-::: {.cell .markdown id="vsZSzRfNEckR"}
 ### Import libraries
-:::
 
-::: {.cell .code execution_count="42" id="wc_mMobuEeTx"}
 ``` python
 import numpy as np
 import pandas as pd
@@ -46,9 +41,7 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
 ```
-:::
 
-::: {.cell .code execution_count="43" colab="{\"base_uri\":\"https://localhost:8080/\"}" id="9Oo_vozYgXJu" outputId="b7da4b5f-3e3b-47fa-a6f5-7cada3e6f67a"}
 ``` python
 # Change the path to point to your data location
 filepath = "/content/drive/MyDrive/Bản sao của healthcare-dataset-stroke-data.csv"
