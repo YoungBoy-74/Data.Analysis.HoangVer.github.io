@@ -53,7 +53,6 @@ stroke_data = pd.read_csv(filepath)
 print(stroke_data)
 ```
 
-::: {.output .stream .stdout}
              id  gender   age  hypertension  heart_disease ever_married  \
     0      9046    Male  67.0             0              1          Yes   
     1     51676  Female  61.0             0              0          Yes   
@@ -94,38 +93,31 @@ print(stroke_data)
     5109       0  
 
     [5110 rows x 12 columns]
-:::
-:::
 
-::: {.cell .code execution_count="44" colab="{\"base_uri\":\"https://localhost:8080/\"}" id="w_nnA4q5gdje" outputId="94cf051d-b305-49e8-92cf-3a9a9f5bba12"}
 ``` python
 stroke_data.shape
 ```
 
-::: {.output .execute_result execution_count="44"}
-    (5110, 12)
-:::
-:::
 
-::: {.cell .code execution_count="45" colab="{\"base_uri\":\"https://localhost:8080/\"}" id="oDXKiS4pgkVn" outputId="9923af91-f46b-47fd-cfbb-5047397c5c37"}
+    (5110, 12)
+
 ``` python
 stroke_data.columns
 ```
 
-::: {.output .execute_result execution_count="45"}
+
     Index(['id', 'gender', 'age', 'hypertension', 'heart_disease', 'ever_married',
            'work_type', 'Residence_type', 'avg_glucose_level', 'bmi',
            'smoking_status', 'stroke'],
           dtype='object')
-:::
-:::
 
-::: {.cell .code execution_count="46" colab="{\"base_uri\":\"https://localhost:8080/\",\"height\":363}" id="pLKI6hkSgq42" outputId="f1639c4c-9066-4528-e1f1-8f1accbad534"}
+
+
 ``` python
 stroke_data.head(10)
 ```
 
-::: {.output .execute_result execution_count="46"}
+
 ``` json
 {"summary":"{\n  \"name\": \"stroke_data\",\n  \"rows\": 5110,\n  \"fields\": [\n    {\n      \"column\": \"id\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 21161,\n        \"min\": 67,\n        \"max\": 72940,\n        \"num_unique_values\": 5110,\n        \"samples\": [\n          40041,\n          55244,\n          70992\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"gender\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"Male\",\n          \"Female\",\n          \"Other\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"age\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 22.61264672311352,\n        \"min\": 0.08,\n        \"max\": 82.0,\n        \"num_unique_values\": 104,\n        \"samples\": [\n          45.0,\n          24.0,\n          33.0\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"hypertension\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0,\n        \"min\": 0,\n        \"max\": 1,\n        \"num_unique_values\": 2,\n        \"samples\": [\n          1,\n          0\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"heart_disease\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0,\n        \"min\": 0,\n        \"max\": 1,\n        \"num_unique_values\": 2,\n        \"samples\": [\n          0,\n          1\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"ever_married\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"No\",\n          \"Yes\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"work_type\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 5,\n        \"samples\": [\n          \"Self-employed\",\n          \"Never_worked\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Residence_type\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"Rural\",\n          \"Urban\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"avg_glucose_level\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 45.28356015058203,\n        \"min\": 55.12,\n        \"max\": 271.74,\n        \"num_unique_values\": 3979,\n        \"samples\": [\n          178.29,\n          156.69\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"bmi\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 7.854066729680158,\n        \"min\": 10.3,\n        \"max\": 97.6,\n        \"num_unique_values\": 418,\n        \"samples\": [\n          49.5,\n          18.5\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"smoking_status\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 4,\n        \"samples\": [\n          \"never smoked\",\n          \"Unknown\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"stroke\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0,\n        \"min\": 0,\n        \"max\": 1,\n        \"num_unique_values\": 2,\n        \"samples\": [\n          0,\n          1\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}","type":"dataframe","variable_name":"stroke_data"}
 ```
