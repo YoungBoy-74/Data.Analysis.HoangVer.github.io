@@ -33,7 +33,7 @@ useful for both your reports and future job interviews
 
 ### Import libraries
 
-``` python
+
 import numpy as np
 import pandas as pd
 import seaborn as sns
