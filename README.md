@@ -13,7 +13,7 @@ jupyter:
   nbformat_minor: 0
 ---
 
-Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)**
 
 1.  Understanding Data Context According to the World Health
     Organization (WHO) stroke is the 2nd leading cause of death
