@@ -1,2 +1,2 @@
-# First Hoang's personal portfolio
+# Hoang's personal portfolio
 Welcome ^_^
